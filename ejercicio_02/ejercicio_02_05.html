@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rellena tu CV</title>
+</head>
+<body>
+    <h1>Rellena tu CV</h1>
+    <div>Nombre</div>
+    <form>
+        <input type="text" name="fname" size="70">
+    </form>
+    <div>Apellidos</div>
+    <form>
+        <input type="text" name="fsurname" size="120">
+    </form>
+    <div>Contraseña</div>
+    <form>
+        <input type="password" name="fpassword" size="15">
+    </form>
+    <div>DNI</div>
+    <form>
+        <input type="text" size="20">
+    </form>
+
+    <div>Sexo</div>
+    <form>
+        <input type="radio" name="fHombre" value="Hombre" id="hombre">
+        <label for="hombre">Hombre</label> <br>
+        <input type="radio" name="fMujer" value="Mujer" id="mujer">
+        <label for="mujer">Mujer</label> <br>
+    </form>
+
+    <form>
+        <label for="foto">Incluir mi foto</label>
+        <input type="file" name="foto" id="foto">
+    </form>
+
+    <form>
+        <input type="checkbox" name="boletin" id="boletin" value="boletin de novedades">
+        <label for="boletin"> Suscribirme al boletín de novedades</label>
+    </form>
+
+    <form>
+        <div>Temas</div>
+        <select name="temas" id="temas" size="5">
+                <optgroup>
+                    <option value="Administración y bases">Administración y bases</option>
+                    <option value="XML">XML</option>
+                    <option value="Redes">Redes</option>
+                    <option value="Android">Andorid</option>
+                </optgroup>
+        </select>
+    </form>
+    <form>
+        <input type="submit" value="Enviar">
+        <input type="reset" value="Borrar datos">
+    </form>
+</body>
+</html>
