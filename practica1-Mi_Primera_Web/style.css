@@ -1,0 +1,19 @@
+header {
+    background-color: burlywood;
+}
+
+main, header, footer{
+    flex-basis: 100%;
+    flex-grow: 1;
+    padding: 15px;
+}
+
+nav {
+    
+    background-color: bisque;
+    }
+
+footer{
+    text-align: center;
+    grid-row: auto;
+}
