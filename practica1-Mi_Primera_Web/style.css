@@ -1,5 +1,27 @@
+*{
+    overflow: auto;
+}
+
 header {
-    background-color: burlywood;
+    top: 0;
+    background-color: rgb(204, 145, 68);
+    color: beige;
+    border-radius: 10px;
+}
+
+nav > a > button{
+    background-color: lightgrey;
+    text-decoration: underline;
+    border-radius: 10px;
+}
+
+button:hover{
+    margin: 1px;
+    background-color: grey;
+}
+
+p{
+    justify-content:flex-start;
 }
 
 main, header, footer{
@@ -7,13 +29,33 @@ main, header, footer{
     flex-grow: 1;
     padding: 15px;
 }
+td{
+    border-style: solid;
+    border-width: 1px;
+    border-color: black;
+}
 
 nav {
-    
+    border-radius: 10px;
+    text-align: center;
     background-color: bisque;
     }
 
 footer{
+    margin: 10px;
     text-align: center;
     grid-row: auto;
+    border-top: solid 1px;
+    width: 100%;
+    height: 40px;
+    padding-top: 10px;
+    bottom: 0;
+    left: 0;
+    text-align: center;
+}
+
+.flex-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 }
