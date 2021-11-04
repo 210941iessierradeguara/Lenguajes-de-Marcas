@@ -9,6 +9,17 @@ header {
     background-color: rgb(204, 145, 68);
     color: beige;
     border-radius: 10px; /* CSS 3*/
+    text-align: center;
+}
+
+@font-face {
+    font-family: Etruscan;
+    src: url(./multimedia/fuentes/Etruscan.ttf);
+}
+
+#Subtitle{
+    font-family: Etruscan;
+    letter-spacing: 3px;
 }
 
 nav > a > button{
@@ -83,7 +94,7 @@ footer{
     justify-content: center; /*CSS 3*/
 }
 
-@media(max-width: 480px){
+@media(max-width: 720px){
     nav{   
         border-radius: 10px;
         text-align: center;
