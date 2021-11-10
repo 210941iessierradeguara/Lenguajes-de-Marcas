@@ -75,7 +75,7 @@ main, header, footer{
     left: 0;
     display: grid;
     grid-template-areas: 
-        'aside p img';
+        'aside article img';
     column-gap: 5px;
 }
 
