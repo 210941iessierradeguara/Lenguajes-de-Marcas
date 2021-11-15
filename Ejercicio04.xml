@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<datos>
+	<ticket>
+		<codigo id="001"></codigo>
+		<fecha>4/10/21</fecha>
+		<hora>14:13</hora>
+		<precioTotal>
+			<precioSinIva>15</precioSinIva>
+			<cantidadIva>3.15</cantidadIva>
+			<pvpTotal>18.15</pvpTotal>
+			<moneda>euro</moneda>
+			<cantidadAhorro></cantidadAhorro>
+		</precioTotal>
+	</ticket>
+	<ticket2>
+		<codigo id="002"></codigo>
+		<fecha>4/10/21</fecha>
+		<hora>15:13</hora>
+		<precioTotal>
+			<precioSinIva>15</precioSinIva>
+			<cantidadIva>3.15</cantidadIva>
+			<pvpTotal>18.15</pvpTotal>
+			<moneda>euro</moneda>
+			<cantidadAhorro></cantidadAhorro>
+		</precioTotal>
+	</ticket2>
+</datos>
