@@ -1,0 +1,29 @@
+Identifica cuáles de las etiquetas que has usado salieron como novedad en HTML5 (RA2a)
+    header, nav, section, footer, 
+Identifica cuáles de las propiedades de estilos que has usado salieron como novedad en CSS3 (RA2a)
+    display: grid; || grid-template-areas: || grid-area || font-family: 
+Indica dos ventajas que aporta el uso de hojas de estilo CSS (RA2g)
+    Nos deja controlar el estiro de varias páginas a la vez.
+    Un cambio en una de estas hojas afectará en cascada a todas la páginas unidas a ese Style en concreto sin amyor esfuerzo requerido
+
+    
+Corrige los errores de este documento para conseguir que sea un documento XHTML válido (RA2d)
+
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN"
+"http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <title>Titulo</title>
+    </head>
+    <body>
+        <h1>Encabezado principal</h1>
+        <p>Adivina donde están los errores</p>
+        <label>¿Estás de acuerdo?</label>
+        </input type="checkbox" id="marca" checked>
+        <h3>Siguiente sección</h3>
+        <img src="./images/wall.jpg" alt="wall"></img>   
+        <i><b>Este es un texto con formato</b></i>    
+        <a href=https://www.w3schools.com>Visit W3Schools</a>        
+    </body>
+</html>
