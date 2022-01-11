@@ -1,0 +1,82 @@
+    <!-- Daniel Martínez Eito-->
+    <!ELEMENT cv (datosPersonales, datosContacto, datosContactoAdicional*, formacion, idiomas, experienciaProfesional, competenciasSP, datosAdicionales)>
+	<!-- Datos Personales -->
+	<!ELEMENT datosPersonales (nombre, apellidos, fechaNac, lugarNac, nacionalidades+, (nif | nie))>
+	<!ATTLIST datosPersonales
+	 	foto CDATA #REQUIRED>
+	<!ELEMENT nombre (#PCDATA)>
+	<!ELEMENT apellidos (#PCDATA)>
+	<!ELEMENT fechaNac (dia, mes, anyo)>
+		<!ELEMENT dia (#PCDATA)>
+		<!ELEMENT mes (#PCDATA)>
+		<!ELEMENT anyo (#PCDATA)>
+	<!ELEMENT lugarNac (#PCDATA)>
+	<!ELEMENT nacionalidades (nacionalidad+)>
+		<!ELEMENT nacionalidad (#PCDATA)>
+	<!ELEMENT nif (#PCDATA)>
+	<!ELEMENT nie (#PCDATA)>
+	<!-- Datos de contacto -->
+	<!ELEMENT datosContacto (calle, numero?, portal?, escalera?, piso?, puerta?, cp, pais, email, movil, telfs*)>
+	<!ELEMENT calle (#PCDATA)>
+		<!ATTLIST calle 
+			tipoVia (Avenida | Plaza | Calle) #REQUIRED>
+	<!ELEMENT numero (#PCDATA)>
+	<!ELEMENT portal (#PCDATA)>
+	<!ELEMENT escalera (#PCDATA)>
+	<!ELEMENT piso (#PCDATA)>
+	<!ELEMENT puerta (#PCDATA)>
+	<!ELEMENT cp (#PCDATA)>
+	<!ELEMENT pais (#PCDATA)>
+	<!ELEMENT email (#PCDATA)>
+	<!ELEMENT movil (#PCDATA)>
+	<!ELEMENT telfs (telf*)>
+		<!ELEMENT telf (#PCDATA)>
+	<!-- Datos de contacto Adicionales -->
+	<!ELEMENT datosContactoAdicional (web, linkedin, facebook)>
+	<!ELEMENT web (#PCDATA)>
+	<!ELEMENT linkedin (#PCDATA)>
+	<!ELEMENT facebook EMPTY>
+	<!-- Formación -->
+	<!ELEMENT formacion (estudio)+>
+		<!ATTLIST estudio nivel (bajo | medio | alto) #FIXED "medio">
+	<!ELEMENT estudio (nombre, lugar, fechaInicio, fechaFin)>
+	<!ELEMENT lugar (#PCDATA)>
+	<!ELEMENT fechaInicio (dia, mes, anyo)>
+	<!ELEMENT fechaFin (dia, mes, anyo)>
+	<!-- idiomas -->
+	<!ELEMENT idiomas (idioma*)>
+	<!ELEMENT idioma (nombre, organismo)>
+	<!ATTLIST idioma 
+		nivel (bajo | medio | alto) #IMPLIED
+		materno ( si | no) #FIXED "no"
+		>
+	<!ELEMENT organismo (#PCDATA)>
+	<!ATTLIST organismo 
+		oficial ( si | no) #FIXED "si">
+	<!-- Experiencia profesional -->
+	<!ELEMENT experienciaProfesional (experiencia)*>
+	<!ELEMENT experiencia (empresa, puesto?, fechaInicio, fechaFin)>
+	<!ELEMENT empresa (#PCDATA)>
+	<!ELEMENT puesto (#PCDATA)>
+	<!-- Competencias Socio-Profesionales -->
+	<!ELEMENT competenciasSP (competencia)*>
+	<!ELEMENT competencia (desc)>
+	<!ATTLIST competencia 
+		tipo (liderazgo | trabajoenequipo | iniciativa) #REQUIRED
+		nivel (1 | 2 | 3 | 4 | 5) #IMPLIED
+		>
+	<!ELEMENT desc (#PCDATA)>
+	<!-- Datos adicionales -->
+	<!ELEMENT datosAdicionales (aficiones*, disponibilidadViajar, vehiculo, licencias)>
+	<!ELEMENT licencias (licencia*)>
+	<!ELEMENT licencia (#PCDATA)>
+	<!ELEMENT aficiones (aficion*)>
+	<!ELEMENT aficion (#PCDATA)>
+	<!ELEMENT disponibilidadViajar (#PCDATA)>
+	<!ELEMENT vehiculo (#PCDATA)>
+	<!-- Idiomas-->
+	<!ENTITY en "inglés">
+	<!ENTITY es "Español">
+	<!ENTITY de "Alemán">
+	<!ENTITY it "Italiano">
+	<!ENTITY fr "Francés">
