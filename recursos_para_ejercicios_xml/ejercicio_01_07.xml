@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<equipos>
+    <equipo>
+        <nombre>A</nombre>
+        <ciudad>B</ciudad>
+        <entrenador>C</entrenador>
+        <jugadores>
+            <jugador>
+                <nombre>D</nombre>
+                <posicion>E</posicion>
+                <nacionalidad>F</nacionalidad>
+            </jugador>
+            <jugador>
+                <nombre>G</nombre>
+                <posicion>H</posicion>
+                <nacionalidad>I</nacionalidad>
+            </jugador>
+            <jugador>
+                <nombre>J</nombre>
+                <posicion>K</posicion>
+                <nacionalidad>L</nacionalidad>
+            </jugador>
+        </jugadores>
+    </equipo>
+    <equipo>
+        <nombre>A1</nombre>
+        <ciudad>B1</ciudad>
+        <entrenador>C1</entrenador>
+        <jugadores>
+            <jugador>
+                <nombre>D1</nombre>
+                <posicion>E1</posicion>
+                <nacionalidad>F1</nacionalidad>
+            </jugador>
+            <jugador>
+                <nombre>G1</nombre>
+                <posicion>H1</posicion>
+                <nacionalidad>I1</nacionalidad>
+            </jugador>
+            <jugador>
+                <nombre>J1</nombre>
+                <posicion>K1</posicion>
+                <nacionalidad>L1</nacionalidad>
+            </jugador>
+        </jugadores>
+    </equipo>
+</equipos>

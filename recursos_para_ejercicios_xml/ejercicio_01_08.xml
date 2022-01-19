@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pedidos>
+    <pedido>
+        <fecha>20 Octubre 2021</fecha>
+        <nombre>Roberto Morilla</nombre>
+        <receptor>Alicia Abad</receptor>
+        <direccion>
+            <ciudad>Albacete</ciudad>
+            <cp>05020</cp>
+            <calle>Plaza de la duquesa</calle>
+            <numero>12</numero>
+        </direccion>
+        <producto>
+            <precio>1480.95</precio>
+            <codigo>872-AA</codigo>
+            <tipo>electrico</tipo>
+            <cantidad>1</cantidad>
+        </producto>
+    </pedido>
+    <pedido>
+        <fecha>20 Octubre 2021</fecha>
+        <nombre>Roberto Morilla</nombre>
+        <receptor>Roberto Morilla</receptor>
+        <direccion>
+            <ciudad>Madrid</ciudad>
+            <cp>28055</cp>
+            <calle>Genral Manuel</calle>
+            <numero>56</numero>
+        </direccion>
+        <producto>
+            <precio>78.98</precio>
+            <codigo>926-FH</codigo>
+            <tipo>sin especificar</tipo>
+            <cantidad>3</cantidad>
+        </producto>
+    </pedido>
+</pedidos>

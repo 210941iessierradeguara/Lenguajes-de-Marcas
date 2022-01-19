@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<agenda>
+    <contacto>
+        <nombre>A</nombre>
+        <direccion>
+            <calle>B</calle>
+            <CP>C</CP>
+            <ciudad>D</ciudad>
+        </direccion>
+        <medios-de-contacto>
+            <tlf-fijo>E</tlf-fijo>
+            <tlf-movil>F</tlf-movil>
+            <mail>G</mail>
+        </medios-de-contacto>
+    </contacto>
+    <contacto>
+        <nombre>H</nombre>
+        <direccion>
+            <calle>I</calle>
+            <CP>J</CP>
+            <ciudad>K</ciudad>
+        </direccion>
+        <medios-de-contacto>
+            <tlf-fijo>L</tlf-fijo>
+            <tlf-movil>M</tlf-movil>
+            <mail>N</mail>
+        </medios-de-contacto>
+    </contacto>
+</agenda>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<marcadores>
+    <marcador tag="1">
+        <nombre>
+            A
+        </nombre>
+        <url>
+            B
+        </url>
+        <descripcion>
+            C
+        </descripcion>
+    </marcador>
+    <marcador tag="2">
+        <nombre>
+            D
+        </nombre>
+        <url>
+            E
+        </url>
+        <descripcion>
+            F
+        </descripcion>
+    </marcador>
+</marcadores>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<empresas>
+    <empresa xmlns:dir="https://www.aaaa.cum"
+             xmlns:ser="https://www.bbbb.com">
+        
+        <dir:direccion>
+            <dir:calle>Avd. Diagonal 8</dir:calle>
+            <dir:ciudad>Barcelona</dir:ciudad>
+            <dir:provincia>Barcelona</dir:provincia>
+            <dir:pais>España</dir:pais>
+        </dir:direccion>
+        <ser:servidor>
+            <ser:url>http://www.unaurl.com</ser:url>
+            <ser:direccion>123.45.67.8</ser:direccion>
+        </ser:servidor>
+    </empresa>
+</empresas>

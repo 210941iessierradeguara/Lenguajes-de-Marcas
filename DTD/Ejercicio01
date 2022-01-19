@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<arbol>
+  <especie>
+    <nombre>Longan</nombre>
+    <variedad>Chanpoo</variedad>
+    <origen>China</origen>
+    <color_fruto>Marrón</color_fruto>
+    <maduracion>Octubre</maduracion>
+    <riego>Diario</riego>
+    <precio>2.5</precio>
+  </especie>
+</arbol>

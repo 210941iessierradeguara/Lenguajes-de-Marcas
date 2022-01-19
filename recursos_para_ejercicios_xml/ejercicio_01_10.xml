@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pisos>
+    <piso>
+        <direccion>
+            <via>Calle Yoquense</via>
+            <numero>23</numero>
+            <piso>1º</piso>
+            <letra>a</letra>
+            <ciudad>Huesca</ciudad>
+        </direccion>
+        <tiene>
+            <habitaciones>3</habitaciones>
+            <salon>1</salon>
+            <cocina>1</cocina>
+            <baño>2</baño>
+        
+            <ascensor>1</ascensor>
+            <garaje>1</garaje>
+            <trastero>1</trastero>
+        </tiene>
+        <es>Interior</es>
+        <PreaparadoParaVivir>Si</PreaparadoParaVivir>
+    </piso>
+    <piso>
+        <direccion>
+            <via>Avenida Deatras</via>
+            <numero>86</numero>
+            <piso>4</piso>
+            <letra>B</letra>
+            <ciudad>Huesca</ciudad>
+        </direccion>
+        <tiene>
+            <habitaciones>4</habitaciones>
+            <salon>0</salon>
+            <cocina>1</cocina>
+            <baño>2</baño>
+        
+            <ascensor>1</ascensor>
+            <garaje>1</garaje>
+            <trastero>0</trastero>
+        </tiene>
+        <es>Exterior</es>
+        <PreaparadoParaVivir>No, requiere obras</PreaparadoParaVivir>
+    </piso>
+    <piso>
+        <direccion>
+            <via>Calle Dearriba</via>
+            <numero>34</numero>
+            <piso>3</piso>
+            <letra>C</letra>
+            <ciudad>Huesca</ciudad>
+        </direccion>
+        <tiene>
+            <habitaciones>2</habitaciones>
+            <salon>1</salon>
+            <cocina>1</cocina>
+            <baño>1</baño>
+        
+            <ascensor>1</ascensor>
+            <garaje>0</garaje>
+            <trastero>0</trastero>
+        </tiene>
+        <es>exterior</es>
+        <PreaparadoParaVivir>Si</PreaparadoParaVivir>
+    </piso>
+</pisos>
