@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <xs:element name="resultados_encuesta">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="encuesta" maxOccurs="unbounded">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="datosAlumno">
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element name="nombre"></xs:element>
+                                        <xs:element name="apellidos"></xs:element>
+                                    </xs:sequence>
+                                    <xs:attribute name="num" use="required">
+                                        <xs:simpleType>
+                                            <xs:restriction base="xs:int">
+                                                <xs:totalDigits value="6"></xs:totalDigits>
+                                            </xs:restriction>
+                                        </xs:simpleType>
+                                    </xs:attribute>
+                                </xs:complexType>
+                            </xs:element>
+                            <xs:element name="organizacion">
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element name="enunciado" fixed="Valore cada uno de los aspectos de la organización del viaje, siendo 0 nada satisfecho y 5 muy satisfecho">
+                                            <xs:complexType>
+                                                <xs:attribute name="idioma" use="optional">
+                                                        <xs:simpleType>
+                                                            <xs:restriction base="xs:string">
+                                                            <xs:enumeration value="ES"></xs:enumeration>
+                                                            <xs:enumeration value="EN"></xs:enumeration>
+                                                        </xs:restriction>
+                                                    </xs:simpleType>
+                                                </xs:attribute>
+                                            </xs:complexType>
+                                        </xs:element>
+                                    </xs:sequence>
+                                </xs:complexType>
+                            </xs:element>
+                            <xs:element name="visitasRealizadas"></xs:element>
+                            <xs:element name="valoracion_general"></xs:element>
+                            <xs:element name="comentario"></xs:element>
+                        </xs:sequence>
+                        <xs:attribute name="marca_temporal" type="xs:dateTime"></xs:attribute>
+                        <xs:attribute name="almacenada_en_bbdd" type="xs:boolean" use="optional" fixed="true"></xs:attribute>
+                    </xs:complexType>
+                </xs:element>
+                <xs:element name="sitios">
+
+                </xs:element>
+                <xs:element name="estadisticas"></xs:element>
+                <xs:element name="localizador"></xs:element>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+</xs:schema>
