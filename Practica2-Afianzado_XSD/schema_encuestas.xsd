@@ -1,12 +1,30 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
     <xs:element name="resultados_encuesta">
+        <xs:annotation>
+            <xs:documentation>
+                Almacena los datos de las encuestas
+                etiqueta raiz, hijos encuesta
+            </xs:documentation>
+        </xs:annotation>
         <xs:complexType>
             <xs:sequence>
                 <xs:element name="encuesta" maxOccurs="unbounded">
+                    <xs:annotation>
+                        <xs:documentation>
+                            almacena los datos de la encuesta
+                            encuesta, hijo de resultados_ecuesta, sin límite de apariciones máximas, hijos: datosAlumno, Organizacion, visitasRealizadas, valoración general y comentario
+                        </xs:documentation>
+                    </xs:annotation>
                     <xs:complexType>
                         <xs:sequence>
                             <xs:element name="datosAlumno">
+                                <xs:annotation>
+                                    <xs:documentation>
+                                        almacena los datos del alumno.
+                                        necesita como hijos el nombre, apellidos, y tiene un atributo num con una cantidad máxima de 6 dígitos
+                                    </xs:documentation>
+                                </xs:annotation>
                                 <xs:complexType>
                                     <xs:sequence>
                                         <xs:element name="nombre"></xs:element>
@@ -22,36 +40,161 @@
                                 </xs:complexType>
                             </xs:element>
                             <xs:element name="organizacion">
+                                <xs:annotation>
+                                    <xs:documentation>
+                                        almacena los valores y notas en múltiples aspectos:
+                                        tiene una etiqueta cuyo unico valor puede ser el texto espeificado debajo, y un atributo idioma opcional que solo puede alternar entre ES y EN
+                                    </xs:documentation>
+                                </xs:annotation>
                                 <xs:complexType>
-                                    <xs:sequence>
+                                    <xs:all>
                                         <xs:element name="enunciado" fixed="Valore cada uno de los aspectos de la organización del viaje, siendo 0 nada satisfecho y 5 muy satisfecho">
                                             <xs:complexType>
-                                                <xs:attribute name="idioma" use="optional">
-                                                        <xs:simpleType>
-                                                            <xs:restriction base="xs:string">
-                                                            <xs:enumeration value="ES"></xs:enumeration>
-                                                            <xs:enumeration value="EN"></xs:enumeration>
-                                                        </xs:restriction>
-                                                    </xs:simpleType>
-                                                </xs:attribute>
+                                                <xs:simpleContent>
+                                                    <xs:extension base="xs:string">
+                                                        <xs:attribute name="idioma" use="optional">
+                                                            <xs:simpleType>
+                                                                <xs:restriction base="xs:string">
+                                                                <xs:enumeration value="ES"></xs:enumeration>
+                                                                <xs:enumeration value="EN"></xs:enumeration>
+                                                                </xs:restriction>
+                                                            </xs:simpleType>
+                                                        </xs:attribute>
+                                                    </xs:extension>
+                                                </xs:simpleContent>
+                                            </xs:complexType>
+                                        </xs:element>
+                                        <xs:element name="viaje">
+                                            <xs:annotation>
+                                                <xs:documentation>
+                                                    tanto en viaje como en los otros 2 aspectos a puntuar el valor mínimo es 0 y el máximo 5.
+                                                </xs:documentation>
+                                            </xs:annotation>
+                                            <xs:simpleType>
+                                                <xs:restriction base="xs:int">
+                                                    <xs:minInclusive value="0"></xs:minInclusive>
+                                                    <xs:maxInclusive value="5"></xs:maxInclusive>
+                                                </xs:restriction>
+                                            </xs:simpleType>
+                                        </xs:element>
+                                        <xs:element name="visitas">
+                                            <xs:simpleType>
+                                                <xs:restriction base="xs:int">
+                                                    <xs:minInclusive value="0"></xs:minInclusive>
+                                                    <xs:maxInclusive value="5"></xs:maxInclusive>
+                                                </xs:restriction>
+                                            </xs:simpleType>
+                                        </xs:element>
+                                        <xs:element name="comida">
+                                            <xs:simpleType>
+                                                <xs:restriction base="xs:int">
+                                                    <xs:minInclusive value="0"></xs:minInclusive>
+                                                    <xs:maxInclusive value="5"></xs:maxInclusive>
+                                                </xs:restriction>
+                                            </xs:simpleType>
+                                        </xs:element>
+                                    </xs:all>
+                                </xs:complexType>
+                            </xs:element>
+                            <xs:element name="visitasRealizadas">
+
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element name="info" default="Valore cada uno de los sitios visitados durante el viaje a Barcelona, siendo 0 nada satisfecho y 5 muy satisfecho" minOccurs="0"></xs:element>
+                                        <xs:element name="visita" maxOccurs="3" minOccurs="3">
+                                            <xs:complexType>
+                                                <xs:simpleContent>
+                                                    <xs:extension base="xs:int">
+                                                        <xs:attribute name="sitio" type="xs:IDREF"></xs:attribute>
+                                                    </xs:extension>
+                                                </xs:simpleContent>
                                             </xs:complexType>
                                         </xs:element>
                                     </xs:sequence>
                                 </xs:complexType>
                             </xs:element>
-                            <xs:element name="visitasRealizadas"></xs:element>
-                            <xs:element name="valoracion_general"></xs:element>
-                            <xs:element name="comentario"></xs:element>
+                            <xs:element name="valoracion_general">
+                                <xs:annotation>
+                                    <xs:documentation>
+                                        valoración general tiene un enumeration en las que solo se admiten los valores introducidos
+                                    </xs:documentation>
+                                </xs:annotation>
+                                <xs:simpleType>
+                                    <xs:restriction base="xs:string">
+                                        <xs:enumeration value="Muy satisfecho"></xs:enumeration>
+                                        <xs:enumeration value="Satisfecho"></xs:enumeration>
+                                        <xs:enumeration value="Poco satisfecho"></xs:enumeration>
+                                        <xs:enumeration value="Nada satisfecho"></xs:enumeration>
+                                    </xs:restriction>
+                                </xs:simpleType>
+                            </xs:element>
+                            <xs:element name="comentario">
+                                <xs:complexType mixed="true">
+                                    <xs:choice minOccurs="0" maxOccurs="unbounded">
+                                        <xs:element name="resaltar" type="xs:string"></xs:element>
+                                        <xs:element name="colorear">
+                                            <xs:complexType>
+                                                <xs:simpleContent>
+                                                    <xs:extension base="xs:string">
+                                                        <xs:attribute name="color" type="xs:string" default="rojo"></xs:attribute>
+                                                    </xs:extension>
+                                                </xs:simpleContent>
+                                            </xs:complexType>
+                                        </xs:element>
+                                    </xs:choice>
+                                </xs:complexType>
+                            </xs:element>
                         </xs:sequence>
                         <xs:attribute name="marca_temporal" type="xs:dateTime"></xs:attribute>
                         <xs:attribute name="almacenada_en_bbdd" type="xs:boolean" use="optional" fixed="true"></xs:attribute>
                     </xs:complexType>
                 </xs:element>
                 <xs:element name="sitios">
-
+                    <xs:annotation>
+                        <xs:documentation>
+                            Min y max occurs para fijar el uso de sitio en 3 veces y no más o menos, tras ello se le aplica un atributo id
+                        </xs:documentation>
+                    </xs:annotation>
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="sitio" maxOccurs="3" minOccurs="3">
+                                <xs:complexType>
+                                    <xs:simpleContent>
+                                        <xs:extension base="xs:string">
+                                            <xs:attribute name="id" type="xs:ID" use="required"></xs:attribute>
+                                        </xs:extension>
+                                    </xs:simpleContent>
+                                </xs:complexType>
+                            </xs:element>
+                        </xs:sequence>
+                    </xs:complexType>
                 </xs:element>
-                <xs:element name="estadisticas"></xs:element>
-                <xs:element name="localizador"></xs:element>
+                <xs:element name="estadisticas" fixed="">
+                    <xs:annotation>
+                        <xs:documentation>
+                            Estadisticas está forzada a que su valor sea vacio, además se indica que el atributo puntiación_media ha de ser decimal
+                        </xs:documentation>
+                    </xs:annotation>
+                    <xs:complexType>
+                        <xs:simpleContent>
+                            <xs:extension base="xs:string">
+                                <xs:attribute name="puntuacion_media" type="xs:decimal"></xs:attribute>
+                            </xs:extension>
+                        </xs:simpleContent>
+                    </xs:complexType>
+                </xs:element>
+                <xs:element name="localizador">
+                    <xs:annotation>
+                        <xs:documentation>
+                            el valor ha de seguir el patron de 3 letras MAYÚSCULAS, 1 o más DÍGITOS, 0 o más letras MINÚSCULAS, y ha de acabar en alguna de estas letras: A,C,E
+                        </xs:documentation>
+                    </xs:annotation>
+                    <xs:simpleType>
+                        <xs:restriction base="xs:string">
+                            <xs:pattern value="([A-Z]{3})([0-9]+)([a-z]*)(A|C|E)"></xs:pattern>
+                        </xs:restriction>
+                    </xs:simpleType>
+                </xs:element>
             </xs:sequence>
         </xs:complexType>
     </xs:element>
