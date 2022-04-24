@@ -1,0 +1,245 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pokedex>
+    <!-- Liga Super Ball-->
+    <!-- Hariyama entra por el que más pc tiene y su tipo lucha no es requerido en otras categorías-->
+    <pokemon f_captura="2018">
+        <nombre>Hariyama</nombre>
+        <ataque>
+          <a_nombre>Avalancha</a_nombre>
+          <potencia>14</potencia>
+        </ataque>
+        <tipo>Lucha</tipo>
+        <pc>1054</pc>
+      </pokemon>
+      <!-- Rufflet es mejor que Darumaka en terminos de Pc pero por ello va a ser reservado hasta la vopa voladora y Gligar ha sido usado en la lisga Ultra Ball-->
+      <pokemon f_captura="2018">
+        <nombre>Darumaka</nombre>
+        <ataque>
+          <a_nombre>Colmillo Igneo</a_nombre>
+          <potencia>12</potencia>
+        </ataque>
+        <ataque>
+          <a_nombre>Nitrocarga</a_nombre>
+          <potencia>70</potencia>
+        </ataque>
+        <tipo>Fuego</tipo>
+        <pc>779</pc>
+      </pokemon>
+      <!-- Skarmory también debería ir antes que aggron en prioridad para esta liga por pc, pero debido a su tipo volador se le reserva para la copa volador-->
+      <pokemon f_captura="2018">
+        <nombre>Aggron</nombre>
+        <ataque>
+          <a_nombre>Cola Dragon</a_nombre>
+          <potencia>15</potencia>
+        </ataque>
+        <tipo>Acero</tipo>
+        <tipo>Roca</tipo>
+        <pc>666</pc>
+      </pokemon>
+
+    <!-- Liga Ultra Ball-->
+    <!-- Magneton y Hitmonchan suponen los dos pokemons con más pc que pueden acceder a esta lista-->
+    <pokemon f_captura="2021">
+        <nombre>Magneton</nombre>
+        <ataque>
+          <a_nombre>Rayo Carga</a_nombre>
+          <potencia>8</potencia>
+        </ataque>
+        <ataque>
+          <a_nombre>Retribucion</a_nombre>
+          <potencia>35</potencia>
+        </ataque>
+        <tipo>Electrico</tipo>
+        <pc>2159</pc>
+      </pokemon>
+
+      <pokemon f_captura="2022">
+        <nombre>Hitmonchan</nombre>
+        <ataque>
+          <a_nombre>Ataque Rapido</a_nombre>
+          <potencia>5</potencia>
+        </ataque>
+        <tipo>Lucha</tipo>
+        <pc>1684</pc>
+      </pokemon>
+      <!-- Gligar no tiene el mayor pc pero el ser tipo tierra supone que si intentan usar un tierra contra Magneton poder cambiar a algo contra 
+        lo que sean inefectivos por el tipo volador además de suponer una amenaza a los electricos por su propio tipo tierra. Aparte el pokemon que esta jsuto por debajo
+        de hitmonchan en pc es Hariyama lo que supondría una repetición de pokemon y tipo-->
+      <pokemon f_captura="2017">
+        <nombre>Gligar</nombre>
+        <ataque>
+          <a_nombre>Rapido Ataque</a_nombre>
+          <potencia>8</potencia>
+        </ataque>
+        <ataque>
+          <a_nombre>Golpe Aereo</a_nombre>
+          <potencia>70</potencia>
+        </ataque>
+        <tipo>Tierra</tipo>
+        <tipo>Volador</tipo>
+        <pc>901</pc>
+      </pokemon>
+
+    <!-- Liga Master Ball-->
+    <!-- Se ha escogido estos tres debido a que todos superan el pc admitido por cualquier otra liga o copa.-->
+    <pokemon f_captura="2019">
+        <nombre>Espeon</nombre>
+        <ataque>
+          <a_nombre>Cabezazo Zen</a_nombre>
+          <potencia>12</potencia>
+        </ataque>
+        <ataque>
+          <a_nombre>Premonicion</a_nombre>
+          <potencia>120</potencia>
+        </ataque>
+        <tipo>Psiquico</tipo>
+        <pc>3046</pc>
+      </pokemon>
+      
+      <pokemon f_captura="2018">
+        <nombre>Gyarados</nombre>
+        <ataque>
+          <a_nombre>Mordisco</a_nombre>
+          <potencia>6</potencia>
+        </ataque>
+        <ataque>
+          <a_nombre>Enfado</a_nombre>
+          <potencia>110</potencia>
+        </ataque>
+        <tipo>Agua</tipo>
+        <tipo>Volador</tipo>
+        <pc>3001</pc>
+      </pokemon>
+
+      <pokemon f_captura="2020">
+        <nombre>Flareon</nombre>
+        <ataque>
+          <a_nombre>Ascuas</a_nombre>
+          <potencia>10</potencia>
+        </ataque>
+        <tipo>Fuego</tipo>
+        <pc>2623</pc>
+      </pokemon>
+      <!-- Copa Halloween-->
+      <!-- Solo hay dos pokemons que puedan entrar en esta copa-->
+      <pokemon f_captura="2022">
+        <nombre>Rattata</nombre>
+        <ataque>
+          <a_nombre>Ataque Rapido</a_nombre>
+          <potencia>8</potencia>
+        </ataque>
+        <ataque>
+          <a_nombre>Bola Sombra</a_nombre>
+          <potencia>100</potencia>
+        </ataque>
+        <tipo>Siniestro</tipo>
+        <tipo>Normal</tipo>
+        <pc>461</pc>
+      </pokemon>
+      <pokemon f_captura="2020">
+        <nombre>Snubbull</nombre>
+        <ataque>
+          <a_nombre>Mordisco</a_nombre>
+          <potencia>6</potencia>
+        </ataque>
+        <tipo>Hada</tipo>
+        <pc>297</pc>
+      </pokemon>
+      <!-- Copa Volador-->
+      <!-- Descontando a Gligar que se uso en la liga ultra ball estos son los pokemons voladores con mayor pc-->
+      <pokemon f_captura="2019">
+        <nombre>Rufflet</nombre>
+        <ataque>
+          <a_nombre>Ataque ala</a_nombre>
+          <potencia>8</potencia>
+        </ataque>
+        <ataque>
+          <a_nombre>Avalancha</a_nombre>
+          <potencia>70</potencia>
+        </ataque>
+        <tipo>Normal</tipo>
+        <tipo>Volador</tipo>
+        <pc>810</pc>
+      </pokemon>
+
+      <pokemon f_captura="2022">
+        <nombre>Skamory</nombre>
+        <ataque>
+          <a_nombre>Tajo Aereo</a_nombre>
+          <potencia>14</potencia>
+        </ataque>
+        <tipo>Acero</tipo>
+        <tipo>Volador</tipo>
+        <pc>748</pc>
+      </pokemon>
+
+      <pokemon f_captura="2017">
+        <nombre>Taillow</nombre>
+        <ataque>
+          <a_nombre>Ataque Rapido</a_nombre>
+          <potencia>8</potencia>
+        </ataque>
+        <ataque>
+          <a_nombre>Golpe Aereo</a_nombre>
+          <potencia>55</potencia>
+        </ataque>
+        <tipo>Normal</tipo>
+        <tipo>Volador</tipo>
+        <pc>411</pc>
+      </pokemon>
+      <!-- Copa Captura-->
+      <!-- Copa Elemental-->
+      <pokemon f_captura="2021">
+        <nombre>Fomantis</nombre>
+        <ataque>
+          <a_nombre>Rapido Ataque</a_nombre>
+          <potencia>8</potencia>
+        </ataque>
+        <ataque>
+          <a_nombre>Corte Furia</a_nombre>
+          <potencia>3</potencia>
+        </ataque>
+        <ataque>
+          <a_nombre>Energibola</a_nombre>
+          <potencia>90</potencia>
+        </ataque>
+        <tipo>Planta</tipo>
+        <pc>461</pc>
+      </pokemon>
+      
+      <pokemon f_captura="2022">
+        <nombre>Chikorita</nombre>
+        <ataque>
+          <a_nombre>Placaje</a_nombre>
+          <potencia>5</potencia>
+        </ataque>
+        <ataque>
+          <a_nombre>Poder Oculto</a_nombre>
+          <potencia>15</potencia>
+        </ataque>
+        <ataque>
+          <a_nombre>Energibola</a_nombre>
+          <potencia>90</potencia>
+        </ataque>
+        <tipo>Planta</tipo>
+        <pc>391</pc>
+      </pokemon>
+
+      <pokemon f_captura="2022">
+        <nombre>Petilil</nombre>
+        <ataque>
+          <a_nombre>Ataque Rapido</a_nombre>
+          <potencia>8</potencia>
+        </ataque>
+        <ataque>
+          <a_nombre>Poder Oculto</a_nombre>
+          <potencia>15</potencia>
+        </ataque>
+        <ataque>
+          <a_nombre>Energibola</a_nombre>
+          <potencia>90</potencia>
+        </ataque>
+        <tipo>Planta</tipo>
+        <pc>363</pc>
+      </pokemon>
+</pokedex>
