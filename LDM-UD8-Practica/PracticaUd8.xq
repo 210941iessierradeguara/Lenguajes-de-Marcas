@@ -28,8 +28,6 @@ let $pc := $pok/pc
 let $na := count($pok/ataque)
 order by number($pc) descending
 where $pc <= 2500
-where $pok/tipo = 'Volador'
-where $pok/tipo = 'Tierra'
 return $pok
 :)
 (:Liga MB:)(:Cualquier pokemon:)

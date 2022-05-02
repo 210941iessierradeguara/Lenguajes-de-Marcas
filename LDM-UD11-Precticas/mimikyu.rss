@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0">
+    <channel>
+        <title>Lorem Ipsum</title>
+        <link>http://www.loremipsum.com</link>
+        <description>Pagina principal</description>
+        <item>
+            <title>Mimikyu, el pokemon disfrazado</title>
+            <link>http://www.loremipsum.com/rss/mimikyu.rss</link>
+            <category>Pokemon</category>
+            <language>Japanese</language>
+            <author>210941@iessierradeguara.com</author>
+        </item>
+        <description>Entradad sobre Mimikyu</description>
+    </channel>
+</rss>

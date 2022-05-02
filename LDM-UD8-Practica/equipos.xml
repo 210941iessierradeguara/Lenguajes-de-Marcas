@@ -188,6 +188,7 @@
         <pc>411</pc>
       </pokemon>
       <!-- Copa Captura-->
+      
       <!-- Copa Elemental-->
       <pokemon f_captura="2021">
         <nombre>Fomantis</nombre>
@@ -206,7 +207,7 @@
         <tipo>Planta</tipo>
         <pc>461</pc>
       </pokemon>
-      
+
       <pokemon f_captura="2022">
         <nombre>Chikorita</nombre>
         <ataque>
