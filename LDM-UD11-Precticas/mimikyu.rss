@@ -4,13 +4,16 @@
         <title>Lorem Ipsum</title>
         <link>http://www.loremipsum.com</link>
         <description>Pagina principal</description>
+        <language>ja-ja</language>
         <item>
             <title>Mimikyu, el pokemon disfrazado</title>
             <link>http://www.loremipsum.com/rss/mimikyu.rss</link>
             <category>Pokemon</category>
-            <language>Japanese</language>
+            <description>
+                Entrada sobre Mimikyu: Se cubre con un saco andrajoso con aspecto de Pikachu para no resultar tan aterrador, aunque este le confiere un aspecto aún más terrorífico. 
+            </description>
             <author>210941@iessierradeguara.com</author>
         </item>
-        <description>Entradad sobre Mimikyu</description>
+        <copyright>Martínez Eito daniel</copyright>
     </channel>
 </rss>
