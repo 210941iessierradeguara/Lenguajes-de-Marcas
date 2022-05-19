@@ -1,4 +1,4 @@
-(::)
+(:DME:)
 (:Liga SB:)(:1500 de pc o menos:)
 (:
 for $pok in /pokedex/pokemon
