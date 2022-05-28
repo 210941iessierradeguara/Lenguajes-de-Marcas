@@ -1,0 +1,2 @@
+Se puede usar tanto para compartir datos en diferentes formatos y en diferentes plataformas o 
+para userlo en webs que necesiten ser dinamicas y ligeras.

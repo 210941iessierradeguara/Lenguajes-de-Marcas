@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="parte2.xsl"?>
+<empleados>
+  <empleado oficina="Huesca">
+    <nombre>Natalia</nombre>
+	<primer_apellido>Goseil</primer_apellido>
+	<segundo_apellido>Luje</segundo_apellido>
+    <anyo_contratacion>2015</anyo_contratacion>
+    <puesto>PR-Programador</puesto>
+    <salario>1000</salario>
+	<departamento>Java</departamento>
+	<comentarios_rendimiento>Trabajadora proactiva y resolutiva</comentarios_rendimiento>
+	<conocimientos_tecnicos>
+		<tec>Java</tec>
+		<tec>HTML</tec>
+		<tec>CSS</tec>
+	</conocimientos_tecnicos>
+  </empleado>
+  <empleado oficina="Zaragoza">
+    <nombre>Mario</nombre>
+	<primer_apellido>Blanco</primer_apellido>
+	<segundo_apellido>Liseno</segundo_apellido>
+    <anyo_contratacion>2018</anyo_contratacion>
+    <puesto>PRS-Programador Senior</puesto>
+    <salario>1200</salario>
+	<departamento>SAP</departamento>
+	<comentarios_rendimiento>Trabajador que cumple con sus tareas pero necesita mejorar la parte de gestion</comentarios_rendimiento>
+	<conocimientos_tecnicos>
+		<tec>SAP</tec>
+	</conocimientos_tecnicos>
+  </empleado>
+  <empleado oficina="Huesca">
+    <nombre>Julia</nombre>
+	<primer_apellido>Guara</primer_apellido>
+	<segundo_apellido>Pedrera</segundo_apellido>
+    <anyo_contratacion>2014</anyo_contratacion>
+    <puesto>AS-Analista Senior</puesto>
+    <salario>1600</salario>
+	<departamento>Workday</departamento>
+	<comentarios_rendimiento>Trabajadora con gran capacidad de organizacion y planificacion</comentarios_rendimiento>
+	<conocimientos_tecnicos>
+		<tec>Workday</tec>
+		<tec>XML</tec>
+		<tec>XSLT</tec>
+		<tec>XPath</tec>
+	</conocimientos_tecnicos>
+  </empleado>
+  <empleado oficina="Barcelona">
+    <nombre>Carlos</nombre>
+	<primer_apellido>Mayoral</primer_apellido>
+	<segundo_apellido>Ruisera</segundo_apellido>
+    <anyo_contratacion>2020</anyo_contratacion>
+    <puesto>Analista Tecnico</puesto>
+    <salario>1400</salario>
+	<departamento>Front</departamento>
+	<comentarios_rendimiento>Trabajador muy potente tecnicamente, con gran espiritu de equipo y capacidad de liderazgo. Siempre ayuda al resto del equipo para que se cumplan los plazos de entrega</comentarios_rendimiento>
+	<conocimientos_tecnicos>
+		<tec>HTML</tec>
+		<tec>CSS</tec>
+		<tec>React</tec>
+		<tec>Angular</tec>
+		<tec>Node</tec>
+	</conocimientos_tecnicos>
+  </empleado>
+  <empleado oficina="Huesca">
+    <nombre>Amaya</nombre>
+	<primer_apellido>Suinora</primer_apellido>
+	<segundo_apellido>Melero</segundo_apellido>
+    <anyo_contratacion>2010</anyo_contratacion>
+    <puesto>JEP-Jefa de proyecto</puesto>
+    <salario>2000</salario>
+	<departamento>Android</departamento>
+	<comentarios_rendimiento>Trabajadora versatil que siempre consigue manejar con exito las situaciones poblematicas</comentarios_rendimiento>
+	<conocimientos_tecnicos>
+		<tec>Android</tec>
+		<tec>Java</tec>
+		<tec>XML</tec>
+	</conocimientos_tecnicos>
+  </empleado>
+</empleados>
