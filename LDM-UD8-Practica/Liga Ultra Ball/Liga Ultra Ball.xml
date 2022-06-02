@@ -1,0 +1,45 @@
+<!-- DME-->
+<!-- Liga Ultra Ball-->
+<!-- Magneton y Hitmonchan suponen los dos pokemons con más pc que pueden acceder a esta lista-->
+<pokedex>
+    <pokemon f_captura="2021">
+        <nombre>Magneton</nombre>
+        <ataque>
+          <a_nombre>Rayo Carga</a_nombre>
+          <potencia>8</potencia>
+        </ataque>
+        <ataque>
+          <a_nombre>Retribucion</a_nombre>
+          <potencia>35</potencia>
+        </ataque>
+        <tipo>Electrico</tipo>
+        <pc>2159</pc>
+      </pokemon>
+
+      <pokemon f_captura="2022">
+        <nombre>Hitmonchan</nombre>
+        <ataque>
+          <a_nombre>Ataque Rapido</a_nombre>
+          <potencia>5</potencia>
+        </ataque>
+        <tipo>Lucha</tipo>
+        <pc>1684</pc>
+      </pokemon>
+      <!-- Gligar no tiene el mayor pc pero el ser tipo tierra supone que si intentan usar un tierra contra Magneton poder cambiar a algo contra 
+        lo que sean inefectivos por el tipo volador además de suponer una amenaza a los electricos por su propio tipo tierra. Aparte el pokemon que esta jsuto por debajo
+        de hitmonchan en pc es Hariyama lo que supondría una repetición de pokemon y tipo-->
+      <pokemon f_captura="2017">
+        <nombre>Gligar</nombre>
+        <ataque>
+          <a_nombre>Rapido Ataque</a_nombre>
+          <potencia>8</potencia>
+        </ataque>
+        <ataque>
+          <a_nombre>Golpe Aereo</a_nombre>
+          <potencia>70</potencia>
+        </ataque>
+        <tipo>Tierra</tipo>
+        <tipo>Volador</tipo>
+        <pc>901</pc>
+      </pokemon>
+</pokedex>

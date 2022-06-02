@@ -1,0 +1,43 @@
+<!-- DME-->
+<pokedex>
+    <!-- Copa Captura-->
+      <!-- Todos los pokemos que encajan en esta categoría están repetidos a excepción de Digglet y Slugma, por ello aparte de estos dos se repite un pokemon-->
+      <pokemon f_captura="2022">
+        <nombre>Skamory</nombre>
+        <ataque>
+          <a_nombre>Tajo Aereo</a_nombre>
+          <potencia>14</potencia>
+        </ataque>
+        <tipo>Acero</tipo>
+        <tipo>Volador</tipo>
+        <pc>748</pc>
+      </pokemon>
+
+      <pokemon f_captura="2022">
+        <nombre>Digglet</nombre>
+        <ataque>
+          <a_nombre>Lanzarrocas</a_nombre>
+          <potencia>12</potencia>
+        </ataque>
+        <ataque>
+          <a_nombre>Avalancha</a_nombre>
+          <potencia>80</potencia>
+        </ataque>
+        <tipo>Fuego</tipo>
+        <pc>279</pc>
+      </pokemon>
+
+      <pokemon f_captura="2022">
+        <nombre>Slugma</nombre>
+        <ataque>
+          <a_nombre>Lanzarrocas</a_nombre>
+          <potencia>12</potencia>
+        </ataque>
+        <ataque>
+          <a_nombre>Avalancha</a_nombre>
+          <potencia>80</potencia>
+        </ataque>
+        <tipo>Fuego</tipo>
+        <pc>279</pc>
+      </pokemon>
+</pokedex>

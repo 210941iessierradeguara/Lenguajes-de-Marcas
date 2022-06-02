@@ -1,0 +1,57 @@
+<!-- DME-->
+<pokedex>
+    <!-- Copa Elemental-->
+    <pokemon f_captura="2021">
+        <nombre>Fomantis</nombre>
+        <ataque>
+          <a_nombre>Rapido Ataque</a_nombre>
+          <potencia>8</potencia>
+        </ataque>
+        <ataque>
+          <a_nombre>Corte Furia</a_nombre>
+          <potencia>3</potencia>
+        </ataque>
+        <ataque>
+          <a_nombre>Energibola</a_nombre>
+          <potencia>90</potencia>
+        </ataque>
+        <tipo>Planta</tipo>
+        <pc>461</pc>
+      </pokemon>
+
+      <pokemon f_captura="2022">
+        <nombre>Chikorita</nombre>
+        <ataque>
+          <a_nombre>Placaje</a_nombre>
+          <potencia>5</potencia>
+        </ataque>
+        <ataque>
+          <a_nombre>Poder Oculto</a_nombre>
+          <potencia>15</potencia>
+        </ataque>
+        <ataque>
+          <a_nombre>Energibola</a_nombre>
+          <potencia>90</potencia>
+        </ataque>
+        <tipo>Planta</tipo>
+        <pc>391</pc>
+      </pokemon>
+
+      <pokemon f_captura="2022">
+        <nombre>Petilil</nombre>
+        <ataque>
+          <a_nombre>Ataque Rapido</a_nombre>
+          <potencia>8</potencia>
+        </ataque>
+        <ataque>
+          <a_nombre>Poder Oculto</a_nombre>
+          <potencia>15</potencia>
+        </ataque>
+        <ataque>
+          <a_nombre>Energibola</a_nombre>
+          <potencia>90</potencia>
+        </ataque>
+        <tipo>Planta</tipo>
+        <pc>363</pc>
+      </pokemon>
+</pokedex>
